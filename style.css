@@ -1,0 +1,12 @@
+.banner-container {
+    width: 900px;
+    height: 300px;
+    background-color: blue;
+    overflow: hidden;
+
+}
+
+.banner-container img {
+    width: 100%;
+    margin-top: -30px;
+}
