@@ -1,21 +1,15 @@
-// document.getElementById("download").addEventListener("click", () => {
-//     alert("chucha");
-// });
+document.getElementById("changeColor").addEventListener("input", cambio);
 
-function autoClick(){
-    $("#download").click();
+function cambio() {
+    const bannerBackgroundColor = document.getElementById("changeColor").value;
+    document.querySelector(".banner-container").style.backgroundColor = `#${bannerBackgroundColor}`;
 }
 
-$(document).ready(function() {
-    var element = $("#banner");
-
-    $("#download").on('click', function(){
-        html2canvas(element, {
-            onrendered: function(canvas){
-                var imageData = canvas.toDataURL("image/jpg");
-                var newData = imageData.replace(/^data:image\/jpg/, "data:application/octet-stream");
-                $("#download").attr("download", "image.jpg").attr("href", newData);
-            }
-        })
-    })
-})
+document.querySelector('#btnImg').addEventListener('click', function() {
+    html2canvas(document.querySelector('#banner'), {
+      onrendered: function(canvas) {
+        // document.body.appendChild(canvas);
+        return Canvas2Image.saveAsPNG(canvas);
+      }
+    });
+  });

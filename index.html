@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="https://superal.github.io/canvas2image/canvas2image.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
 </head>
-<body onload = "autoClick();">
+<body>
 
     <div id="banner" class="banner-container">
-        <img src="akali.png" alt="">
+        <img class="banner-render" src="./img/renders/Zamasu.png" alt="">
     </div>
     
-    <a id="download">Download</a>
+    <button class="btnImg" id="btnImg">Descargar</button>
+
+    <input id="changeColor" type="color" value="">
 </body>
 <script src="scripts.js"></script>
 </html>

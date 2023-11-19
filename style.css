@@ -1,12 +1,10 @@
 .banner-container {
-    width: 900px;
-    height: 300px;
-    background-color: blue;
+    width: 1500px;
+    height: 500px;
+    background-color: #865bb1;
     overflow: hidden;
-
 }
 
 .banner-container img {
-    width: 100%;
-    margin-top: -30px;
+    width: 40%;
 }
