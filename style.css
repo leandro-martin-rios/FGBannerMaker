@@ -3,6 +3,10 @@
     height: 500px;
     background-color: orange;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .banner-container img {
