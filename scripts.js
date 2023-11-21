@@ -25,11 +25,12 @@ charactersSelect.addEventListener('change', function() {
 
 // CAMBIO DE COLOR EN BANNER
 
-document.getElementById("changeColor").addEventListener("input", changeGradientColor);
+document.getElementById("changeColor").addEventListener("input", changeBackgroundColor);
+const bannerContainer = document.querySelector(".banner-container");
 
-function changeGradientColor() {
+function changeBackgroundColor() {
     const bannerBackgroundColor = document.getElementById("changeColor").value;
-    document.querySelector(".banner-container").style.background = `linear-gradient(#000000, ${bannerBackgroundColor})`;
+    bannerContainer.style.background = bannerBackgroundColor;
 }
 
 // DESCARGA DE IMAGEN
@@ -41,3 +42,18 @@ document.querySelector('#btnImg').addEventListener('click', function() {
       }
     });
   });
+
+// CAMBIAR NOMBRE
+const inputNameId = document.getElementById("banner-change-name");
+inputNameId.addEventListener("input", () =>{
+  document.getElementById("banner-player-name").textContent = inputNameId.value;
+})
+
+// INVERTIR ELEMENTOS EN BANNER
+document.getElementById("invert-elements-banner").addEventListener("click", () => {
+  if(bannerContainer.style.flexDirection == 'row-reverse') {
+    bannerContainer.style.flexDirection = 'row';
+  } else {
+    bannerContainer.style.flexDirection = 'row-reverse';
+  }
+})

@@ -10,5 +10,11 @@
 }
 
 .banner-container img {
-    width: 40%;
+    width: 30%;
+}
+
+.banner-player-name {
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
 }
