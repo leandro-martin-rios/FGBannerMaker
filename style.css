@@ -1,20 +1,33 @@
 .banner-container {
     width: 1500px;
     height: 500px;
-    background-color: orange;
     overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+    position: relative;
 }
 
-.banner-container img {
-    width: 30%;
+.banner-background {
+    filter: invert(10%);
+}
+
+.banner-render {
+    position: absolute;
+    width: 25%;
+    top: 25px;
+    left: 300px;
 }
 
 .banner-player-name {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 505px;
+    height: 170px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
     margin: 0;
     padding: 0;
-    font-size: 50px;
+    font-size: 100px;
+    top: 105px;
+    left: 602px;
 }

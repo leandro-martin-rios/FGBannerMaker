@@ -50,10 +50,10 @@ inputNameId.addEventListener("input", () =>{
 })
 
 // INVERTIR ELEMENTOS EN BANNER
-document.getElementById("invert-elements-banner").addEventListener("click", () => {
-  if(bannerContainer.style.flexDirection == 'row-reverse') {
-    bannerContainer.style.flexDirection = 'row';
-  } else {
-    bannerContainer.style.flexDirection = 'row-reverse';
-  }
-})
+// document.getElementById("invert-elements-banner").addEventListener("click", () => {
+//   if(bannerContainer.style.flexDirection == 'row-reverse') {
+//     bannerContainer.style.flexDirection = 'row';
+//   } else {
+//     bannerContainer.style.flexDirection = 'row-reverse';
+//   }
+// })
